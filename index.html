@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="profile-image">
+      <img src="profile-image.png" alt="profile-image">
+      <a href="#" class="profile-image">Ansh</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Galleria</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="section-one">
+      <div class="image-section">
+        <img src="profile1.jpg" alt="profile1" >
+      </div>
+      <div class="description-section">
+        <h2>MySeLf</h2>
+        <p>This is About Me and only Me . i MySeLf is the only me in this , other than me there is no other me in this whole universe. so thats all <br> about 
+          me . <br> ThankYou
+        </p>
+      </div>
+    </section>
+    <h2>SPAMMING......</h2>
+    
+    <section class="section-two">
+      <div class="image-section">
+        <img src="download1.jpg" alt="download1">
+        <div class="overlay">
+          <div class="overlay-content">
+            <h2>Section 2</h2>
+            <p>This is the description for the second section.</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-section">
+        <img src="download2.jpg" alt="download2">
+        <div class="overlay">
+          <div class="overlay-content">
+            <h2>Chibi Naruto</h2>
+            <p>I like Ramen</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-section">
+        <img src="download3.jpg" alt="download3">
+        <div class="overlay">
+          <div class="overlay-content">
+            <h2>NARUTO v/s SASUKE</h2>
+            <p>The MOST epic BATTLE</p>
+          </div>
+        </div>
+      </div>
+      <div class="image-section">
+        <img src="download4.png" alt="download4">
+        <div class="overlay">
+          <div class="overlay-content">
+            <h2>Kurama</h2>
+          <p>Kuramaaaaaaaaaaaaaaa</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </main>
+<footer>
+  <p>© 2023 My Personal Website. All rights reserved.</p>
+  <p>Page Visits: <span id="page-visits"></span></p>
+  <p id="server-time"></p>
+</footer>
+<script>
+  setInterval(updateServerTime, 1000); // Update time every second
+
+  // Page visit counter
+  if (localStorage.getItem('pageVisits')) {
+  var count = parseInt(localStorage.getItem('pageVisits'));
+  count++;
+  localStorage.setItem('pageVisits', count);
+} else {
+  localStorage.setItem('pageVisits', 1);
+}
+document.getElementById('page-visits').textContent = localStorage.getItem('pageVisits');
+
+
+  // Server time display
+  function updateServerTime() {
+    var serverTime = new Date();
+    var timeString = serverTime.toLocaleTimeString();
+    document.getElementById("server-time").textContent = "Server Time: " + timeString;
+  }
+</script>
+</body>
+</html>

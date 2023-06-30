@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery | My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-image">
+      <img src="profile-image.png" alt="profile-image">
+      <a href="#" class="profile-image">Ansh</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="gallery.html">Galleria</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Photo Gallery</h1>
+    <p style="color: rgb(12, 58, 74);">My Favourite anime Character - Naruto Uzumaki</p>
+    <div class="gallery">
+      <img src="download1.jpg" alt="download1">
+      <img src="download2.jpg" alt="download2">
+      <img src="download3.jpg" alt="download3">
+      <img src="mine1.jpg" alt="mine1">
+      <img src="mine2.jpg" alt="mine2">
+      <img src="mine3.jpg" alt="mine3">
+      <img src="mine4.jpg" alt="mine4">
+      <img src="mine5.JPG" alt="mine5">
+      <img src="mine6.JPG" alt="mine6">
+      <img src="mine7.jpg" alt="mine7">
+      <img src="mine8.JPG" alt="mine8">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
